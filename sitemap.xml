@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://workshops.github.io/macie/</loc>
+  </url>
+  
+  <url>
+    <loc>http://workshops.github.io/introduccion/</loc>
+  </url>
+  
+  <url>
+    <loc>http://workshops.github.io/prerequisitos/</loc>
+  </url>
+  
+  <url>
+    <loc>http://workshops.github.io/introduccion2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://workshops.github.io/prerequisitos2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://workshops.github.io/access_analyzer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://workshops.github.io/</loc>
+  </url>
+  
+  <url>
+    <loc>http://workshops.github.io/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://workshops.github.io/tags/</loc>
+  </url>
+  
+</urlset>
