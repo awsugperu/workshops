@@ -1,62 +1,34 @@
 [
 {
-	"uri": "http://workshops.github.io/macie/",
+	"uri": "http://securityday-workshops.aws.pe/",
 	"title": "Amazon Macie Workshop",
 	"tags": [],
 	"description": "",
-	"content": " Para mayor contenido, síguenos en : AWS User Group Perú\n En este workshop, conoceremos Amazon Macie, como activarlo, como poder usarlo, y algunas recomendaciones que van ayudarte en su uso.\n Introduccion  Introducción a Amazon Macie Un recorrido por los conceptos básicos de Amazon Macie.  Installation  The following steps are here to help you initialize your new website. If you don\u0026rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners. Create your project Hugo provides a new command to create a new website. hugo new site \u0026lt;new_project\u0026gt; Install the theme Install the Hugo-theme-learn theme by following this documentation This theme\u0026rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git Alternatively, you can download the theme as .\n "
+	"content": " Te invitamos a ser parte de nuestra comunidad, síguenos en: AWS User Group Perú\n Amazon Macie En este workshop, conoceremos Amazon Macie, como activarlo, como poder usarlo, y algunas recomendaciones que van ayudarte en su uso. Se recomiendan conocimientos básicos en IAM y S3 aunque no es obligatorio.\n"
 },
 {
-	"uri": "http://workshops.github.io/introduccion/",
-	"title": "Introduccion",
+	"uri": "http://securityday-workshops.aws.pe/introduccion/",
+	"title": "Introducción",
 	"tags": [],
 	"description": "",
-	"content": "Introducción a Amazon Macie    Un recorrido por los conceptos básicos de Amazon Macie.\n "
+	"content": "Introducción a Amazon Macie   Un recorrido por los conceptos básicos de Amazon Macie.\nArquitectura de Amazon Macie.\n"
 },
 {
-	"uri": "http://workshops.github.io/prerequisitos/",
-	"title": "Installation",
+	"uri": "http://securityday-workshops.aws.pe/comienza/",
+	"title": "Comenzar",
 	"tags": [],
 	"description": "",
-	"content": "The following steps are here to help you initialize your new website. If you don\u0026rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.\nCreate your project Hugo provides a new command to create a new website.\nhugo new site \u0026lt;new_project\u0026gt; Install the theme Install the Hugo-theme-learn theme by following this documentation\nThis theme\u0026rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git\nAlternatively, you can download the theme as .zip file and extract it in the themes directory\nBasic configuration When building the website, you can set a theme by using --theme option. However, we suggest you modify the configuration file (config.toml) and set the theme as the default. You can also add the [outputs] section to enable the search functionality.\n# Change the default theme to be use when building the site with Hugo theme = \u0026#34;hugo-theme-learn\u0026#34; # For search functionality [outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] Create your first chapter page Chapters are pages that contain other child pages. It has a special layout style and usually just contains a chapter name, the title and a brief abstract of the section.\n### Chapter 1 # Basics Discover what this Hugo theme is all about and the core concepts behind it. renders as\nHugo-theme-learn provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command\nhugo new --kind chapter basics/_index.md By opening the given file, you should see the property chapter=true on top, meaning this page is a chapter.\nBy default all chapters and pages are created as a draft. If you want to render these pages, remove the property draft: true from the metadata.\nCreate your first content pages Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:\nhugo new basics/first-content.md hugo new basics/second-content/_index.md Feel free to edit thoses files by adding some sample content and replacing the title value in the beginning of the files.\nLaunching the website locally Launch by using the following command:\nhugo serve Go to http://localhost:1313\nYou should notice three things:\n You have a left-side Basics menu, containing two submenus with names equal to the title properties in the previously created files. The home page explains how to customize it by following the instructions. When you run hugo serve, when the contents of the files change, the page automatically refreshes with the changes. Neat!  Build the website When your site is ready to deploy, run the following command:\nhugo A public folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.\nThis website can be automatically published and hosted with Netlify (Read more about Automated HUGO deployments with Netlify). Alternatively, you can use Github pages\n "
+	"content": "Habilita Macie  Ingresa a la consola de Macie Selecciona \u0026ldquo;Get started\u0026rdquo; Ve directo al botón \u0026ldquo;Enable Macie\u0026rdquo;  Dependiendo de la cantidad de Buckets S3, Macie puede demorar algunos minutos en generar un inventario completo de tus buckets.\nMacie es un servicio regional, por lo que si activas este servicio en al región de Virgina, solo podrás analizar los buckets que estén en esa región.\nCrea un job En Macie, ejecutar un job permite que los objectos de tus buckets S3 sean analizados para descubrir y reportar data sensible.\nPara crear un job por defecto, sigamos los siguientes pasos:\n En el panel de navegacion (lado izquierdo), seleccionamos \u0026ldquo;Jobs\u0026rdquo; Selecciona \u0026ldquo;Create Job\u0026rdquo;. Aqui Macie mostrara el inventario de buckets de tu cuenta. Selecciona los buckets que desees analizar y luego clic en \u0026ldquo;Next\u0026rdquo; En la sección de \u0026ldquo;Review S3 Buckets\u0026rdquo;, tu puedes previsualizar un aproximado de cuanto te costaria el job basado en el bucket seleccionado En este paso: \u0026ldquo;Scope\u0026rdquo;, tu puedes programar el analisis, o hacerlo a demanda Omitamos el paso de \u0026ldquo;Custom Data Identifiers\u0026rdquo;, y damos clic en \u0026ldquo;Next\u0026rdquo; Coloca un nombre y opcionalmente una descripción, y luego en \u0026ldquo;Next\u0026rdquo; En este punto, puedes revisar la configuración, de estar conforme, dar en \u0026ldquo;Submit\u0026rdquo;  Para monitorear el estado del job, puedes verlo aqui Revisa tus hallazgos Macie analizara continuamente tus buckets S3 y te informara de cualquier infracción, seáse buckets/objetos publicos, contraseñas, numeros de tarjetas de créditos y cualquier tipo de información sensible que previamente hallas configurado para que sea analizada.\nPara visualizar los hallazgos:\n En el panel de navegación, escojemos \u0026ldquo;Findings\u0026rdquo; De manera opcional podemos filtrar los hallazgos por criterios especificos como:  Bucket Type Job    "
 },
 {
-	"uri": "http://workshops.github.io/introduccion2/",
-	"title": "Introduccion",
-	"tags": [],
-	"description": "",
-	"content": "Introducción a Amazon Macie    Un recorrido por los conceptos básicos de Amazon Macie.\n "
-},
-{
-	"uri": "http://workshops.github.io/prerequisitos2/",
-	"title": "Installation",
-	"tags": [],
-	"description": "",
-	"content": "The following steps are here to help you initialize your new website. If you don\u0026rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.\nCreate your project Hugo provides a new command to create a new website.\nhugo new site \u0026lt;new_project\u0026gt; Install the theme Install the Hugo-theme-learn theme by following this documentation\nThis theme\u0026rsquo;s repository is: https://github.com/matcornic/hugo-theme-learn.git\nAlternatively, you can download the theme as .zip file and extract it in the themes directory\nBasic configuration When building the website, you can set a theme by using --theme option. However, we suggest you modify the configuration file (config.toml) and set the theme as the default. You can also add the [outputs] section to enable the search functionality.\n# Change the default theme to be use when building the site with Hugo theme = \u0026#34;hugo-theme-learn\u0026#34; # For search functionality [outputs] home = [ \u0026#34;HTML\u0026#34;, \u0026#34;RSS\u0026#34;, \u0026#34;JSON\u0026#34;] Create your first chapter page Chapters are pages that contain other child pages. It has a special layout style and usually just contains a chapter name, the title and a brief abstract of the section.\n### Chapter 1 # Basics Discover what this Hugo theme is all about and the core concepts behind it. renders as\nHugo-theme-learn provides archetypes to create skeletons for your website. Begin by creating your first chapter page with the following command\nhugo new --kind chapter basics/_index.md By opening the given file, you should see the property chapter=true on top, meaning this page is a chapter.\nBy default all chapters and pages are created as a draft. If you want to render these pages, remove the property draft: true from the metadata.\nCreate your first content pages Then, create content pages inside the previously created chapter. Here are two ways to create content in the chapter:\nhugo new basics/first-content.md hugo new basics/second-content/_index.md Feel free to edit thoses files by adding some sample content and replacing the title value in the beginning of the files.\nLaunching the website locally Launch by using the following command:\nhugo serve Go to http://localhost:1313\nYou should notice three things:\n You have a left-side Basics menu, containing two submenus with names equal to the title properties in the previously created files. The home page explains how to customize it by following the instructions. When you run hugo serve, when the contents of the files change, the page automatically refreshes with the changes. Neat!  Build the website When your site is ready to deploy, run the following command:\nhugo A public folder will be generated, containing all static content and assets for your website. It can now be deployed on any web server.\nThis website can be automatically published and hosted with Netlify (Read more about Automated HUGO deployments with Netlify). Alternatively, you can use Github pages\n "
-},
-{
-	"uri": "http://workshops.github.io/access_analyzer/",
-	"title": "Access_analyzers",
-	"tags": [],
-	"description": "",
-	"content": ""
-},
-{
-	"uri": "http://workshops.github.io/",
-	"title": "Amazon Macie Workshop",
-	"tags": [],
-	"description": "",
-	"content": " Para mayor contenido, síguenos en : AWS User Group Perú\n En este workshop, conoceremos Amazon Macie, como activarlo, como poder usarlo, y algunas recomendaciones que van ayudarte en su uso.\n Amazon Macie Workshop  Para mayor contenido, síguenos en : AWS User Group Perú En este workshop, conoceremos Amazon Macie, como activarlo, como poder usarlo, y algunas recomendaciones que van ayudarte en su uso. Introduccion Introducción a Amazon Macie Un recorrido por los conceptos básicos de Amazon Macie. Installation The following steps are here to help you initialize your new website. If you don\u0026rsquo;t know Hugo at all, we strongly suggest you learn more about it by following this great documentation for beginners.\n Access_analyzers  \n "
-},
-{
-	"uri": "http://workshops.github.io/categories/",
+	"uri": "http://securityday-workshops.aws.pe/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "http://workshops.github.io/tags/",
+	"uri": "http://securityday-workshops.aws.pe/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",

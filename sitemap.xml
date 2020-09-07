@@ -3,39 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://workshops.github.io/macie/</loc>
+    <loc>http://securityday-workshops.aws.pe/</loc>
   </url>
   
   <url>
-    <loc>http://workshops.github.io/introduccion/</loc>
+    <loc>http://securityday-workshops.aws.pe/introduccion/</loc>
   </url>
   
   <url>
-    <loc>http://workshops.github.io/prerequisitos/</loc>
+    <loc>http://securityday-workshops.aws.pe/comienza/</loc>
   </url>
   
   <url>
-    <loc>http://workshops.github.io/introduccion2/</loc>
+    <loc>http://securityday-workshops.aws.pe/categories/</loc>
   </url>
   
   <url>
-    <loc>http://workshops.github.io/prerequisitos2/</loc>
-  </url>
-  
-  <url>
-    <loc>http://workshops.github.io/access_analyzer/</loc>
-  </url>
-  
-  <url>
-    <loc>http://workshops.github.io/</loc>
-  </url>
-  
-  <url>
-    <loc>http://workshops.github.io/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>http://workshops.github.io/tags/</loc>
+    <loc>http://securityday-workshops.aws.pe/tags/</loc>
   </url>
   
 </urlset>
